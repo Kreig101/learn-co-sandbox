@@ -1,0 +1,1 @@
+retrieve_avatar_image_for_user encompasses logic like if user_name == nil or if image_url == nil

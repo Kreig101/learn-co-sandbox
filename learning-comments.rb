@@ -1,0 +1,5 @@
+# From the Three Dog Night song: "joy to the world (jeremiah was a Bullfrog)"
+puts "joy to the world"
+puts "All the boys and girls"
+Puts "Joy to the fishes in the deep blue sea"
+Puts "joy to you and me"
