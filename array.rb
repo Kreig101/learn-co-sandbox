@@ -1,40 +1,29 @@
-attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+def line(names)
+  display = []
+  if names.length == 0
+    puts "The line is currently empty."
+  else
+     names.each.with_index(1) do |x,y|
+       display <<  " #{y}. #{x}"
 
-
-
-def badge_maker(name)
-  return "Hello, my name is #{name}."
+end
+ display.unshift "The line is currently:"
+puts  display.join
+end
 end
 
-
-
-def batch_badge_creator(attendees)
- messages = []
-  attendees.each do |x|
- messages <<  "Hello, my name is #{x}."
+def take_a_number(array,name)
+  array << name
+  number = array.length 
+  puts "Welcome, #{name}. You are number #{number} in line."
+  
   end
-return messages
+  
+def now_serving(name)
+    if name.length == 0
+      puts "There is nobody waiting to be served!"
+        else puts "Currently serving #{name[0]}."
+   
 end
-
-
-
-
-def assign_rooms(attendees)
-  room = []
-  attendees.each.with_index(1) do |x,y|
-   room << "Hello, #{x}! You'll be assigned to room #{y}!"
-  end
-  return room
+name.shift
 end
-
-
-def printer(attendees)
-  batch_badge_creator(attendees).each do |x|
-    puts "#{x}"
-  end
-  assign_rooms(attendees).each do  |y|
-    puts "#{y}"
- end
- end
- 
- printer(attendees)

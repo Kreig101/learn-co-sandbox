@@ -5,3 +5,5 @@ none_even = true
   end
 end #=> [1,3] because `#each` always returns the original collection
 none_even #=> true
+
+    # [1,3].none?{|i| i.even?} #=> true
